@@ -1,0 +1,8 @@
+2023-03-30 13:55:28.328 | INFO | try_get_data_from_bank:17 | API request to bank
+2023-03-30 13:55:28.657 | SUCCESS | try_get_data_from_bank:20 | API request to bank completed successfully
+2023-03-30 13:55:28.677 | SUCCESS | get:26 | Saved in the DB
+2023-03-30 13:56:14.816 | INFO | try_get_data_from_bank:17 | API request to bank
+2023-03-30 13:56:15.012 | SUCCESS | try_get_data_from_bank:20 | API request to bank completed successfully
+2023-03-30 13:56:15.028 | SUCCESS | get:52 | Saved in the DB
+2023-03-30 13:56:15.031 | INFO | compare_currency_rate:93 | API request to bank
+2023-03-30 13:56:15.406 | SUCCESS | compare_currency_rate:96 | API request to bank completed successfully
