@@ -6,7 +6,7 @@ import requests
 
 from currency.models import RatesDay, RateDay
 
-from currency.serializer import RatesDaySerializer
+from currency.serializer import RatesDaySerializer, RateDaySerializer
 from logs.settings import logger_1
 
 URL_API_BANK = "https://www.nbrb.by/api/exrates/rates/"
@@ -78,7 +78,7 @@ def get_body_on_date_uid(date: str, uid: str):
         "Has rate change?": compare_currency_rate(cur_date=cur_data.date,
                                                   cur_id=cur_data.data.get("Cur_ID"),
                                                   cur_rate=cur_data.data.get("Cur_OfficialRate")),
-        "data": RatesDaySerializer(cur_data).data,
+        "data": RateDaySerializer(cur_data).data,
     }
     return response_body
 
