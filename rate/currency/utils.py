@@ -21,7 +21,7 @@ def try_get_data_from_bank(url: str, params: dict):
         return response.json()
     except requests.exceptions.HTTPError as error:
         logger_1.error(f"Could not get the data, error: {error}")
-        return {"message": f"API request to bank with status {error}"}
+        return error
 
 
 def get_exchange_rates_on_date(date: str) -> dict:
@@ -54,7 +54,7 @@ def get_body_on_date(date: str) -> dict:
 
 
 def get_crc32_from_body(response_body: dict) -> dict:
-    """Return CRC from response_body in headers"""
+    """Return CRC from response_body"""
     crc = str(zlib.crc32(json.dumps(response_body).encode("utf-8")))
     headers = {"CRC32": crc}
     return headers
@@ -71,13 +71,13 @@ def check_record_exists_by_date_cur_id(date: str, uid: str) -> bool:
 
 
 def get_body_on_date_uid(date: str, uid: str):
-    """Return response_body, headers objects"""
+    """Return response_body on date and uid"""
     cur_data = RateDay.objects.get(date=date, cur_id=uid)
     response_body = {
         "message": f"Currency rate for {date} loaded successfully",
-        "Has rate change?": compare_currency_rate(cur_date=cur_data.date,
-                                                  cur_id=cur_data.data.get("Cur_ID"),
-                                                  cur_rate=cur_data.data.get("Cur_OfficialRate")),
+        "is_change": compare_currency_rate(cur_date=cur_data.date,
+                                           cur_id=cur_data.data.get("Cur_ID"),
+                                           cur_rate=cur_data.data.get("Cur_OfficialRate")),
         "data": RateDaySerializer(cur_data).data,
     }
     return response_body
@@ -90,10 +90,10 @@ def compare_currency_rate(cur_date: date, cur_id: int, cur_rate: float):
         "ondate": get_yesterday_date(cur_date),
     }
     try:
-        logger_1.info("API request to bank")
+        logger_1.info("API request to bank for yesterday ")
         yesterday_response = requests.get(url=url, params=params)
         yesterday_response.raise_for_status()
-        logger_1.success("API request to bank completed successfully")
+        logger_1.success("API request to bank for yesterday completed successfully")
         yesterday_rate = yesterday_response.json().get('Cur_OfficialRate')
         if yesterday_rate > cur_rate:
             return f"Курс снизился был {yesterday_rate}, а стал {cur_rate}"

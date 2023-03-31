@@ -1,7 +1,10 @@
 from django.shortcuts import render
-from rest_framework.views import APIView
+from rest_framework.generics import ListAPIView
 from rest_framework.response import Response
 
+import requests
+
+from currency.serializer import DateSerializer
 from currency.utils import get_exchange_rates_on_date, get_body_on_date, \
     check_record_exists_by_date, get_crc32_from_body, check_record_exists_by_date_cur_id, \
     get_currency_rate_on_date, get_body_on_date_uid
@@ -9,8 +12,13 @@ from currency.models import RatesDay, RateDay
 from logs.settings import logger_1
 
 
-class RateDayAPIView(APIView):
-    def get(self, request):
+class RateDayAPIView(ListAPIView):
+    serializer_class = DateSerializer
+
+    def get(self, request, *args, **kwargs):
+        serializer = self.serializer_class(data=request.query_params)
+        serializer.is_valid(raise_exception=True)
+
         date = request.query_params.get("date")
 
         if check_record_exists_by_date(date=date):
@@ -20,6 +28,10 @@ class RateDayAPIView(APIView):
             return Response(data=response_body, headers=headers, status=200)
 
         response = get_exchange_rates_on_date(date=date)
+
+        if isinstance(response, requests.exceptions.HTTPError):
+            return Response(data={"message": f"Could not get the data, error: {response}"},
+                            status=404)
 
         try:
             RatesDay(date=date, data=response).save()
@@ -34,8 +46,13 @@ class RateDayAPIView(APIView):
                             status=422)
 
 
-class RateCurrencyDayAPIView(APIView):
-    def get(self, request):
+class RateCurrencyDayAPIView(ListAPIView):
+    serializer_class = DateSerializer
+
+    def get(self, request, *args, **kwargs):
+        serializer = self.serializer_class(data=request.query_params)
+        serializer.is_valid(raise_exception=True)
+
         date = request.query_params.get("date")
         uid = request.query_params.get("uid")
 
@@ -46,6 +63,10 @@ class RateCurrencyDayAPIView(APIView):
             return Response(data=response_body, headers=headers, status=200)
 
         response = get_currency_rate_on_date(date=date, uid=uid)
+
+        if isinstance(response, requests.exceptions.HTTPError):
+            return Response(data={"message": f"Could not get the data, error: {response}"},
+                            status=404)
 
         try:
             RateDay(date=date, cur_id=uid, data=response).save()

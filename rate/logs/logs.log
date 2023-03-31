@@ -1,34 +1,45 @@
-2023-03-30 13:55:28.328 | INFO | try_get_data_from_bank:17 | API request to bank
-2023-03-30 13:55:28.657 | SUCCESS | try_get_data_from_bank:20 | API request to bank completed successfully
-2023-03-30 13:55:28.677 | SUCCESS | get:26 | Saved in the DB
-2023-03-30 13:56:14.816 | INFO | try_get_data_from_bank:17 | API request to bank
-2023-03-30 13:56:15.012 | SUCCESS | try_get_data_from_bank:20 | API request to bank completed successfully
-2023-03-30 13:56:15.028 | SUCCESS | get:52 | Saved in the DB
-2023-03-30 13:56:15.031 | INFO | compare_currency_rate:93 | API request to bank
-2023-03-30 13:56:15.406 | SUCCESS | compare_currency_rate:96 | API request to bank completed successfully
-2023-03-30 14:27:02.858 | INFO | try_get_data_from_bank:17 | API request to bank
-2023-03-30 14:27:03.118 | SUCCESS | try_get_data_from_bank:20 | API request to bank completed successfully
-2023-03-30 14:27:03.138 | SUCCESS | get:26 | Saved in the DB
-2023-03-30 14:28:04.045 | INFO | try_get_data_from_bank:17 | API request to bank
-2023-03-30 14:28:04.702 | SUCCESS | try_get_data_from_bank:20 | API request to bank completed successfully
-2023-03-30 14:28:04.718 | SUCCESS | get:52 | Saved in the DB
-2023-03-30 14:28:04.721 | INFO | compare_currency_rate:93 | API request to bank
-2023-03-30 14:28:09.969 | SUCCESS | compare_currency_rate:96 | API request to bank completed successfully
-2023-03-30 14:28:37.228 | INFO | try_get_data_from_bank:17 | API request to bank
-2023-03-30 14:28:37.429 | SUCCESS | try_get_data_from_bank:20 | API request to bank completed successfully
-2023-03-30 14:28:37.446 | SUCCESS | get:52 | Saved in the DB
-2023-03-30 14:28:37.449 | INFO | compare_currency_rate:93 | API request to bank
-2023-03-30 14:28:37.668 | SUCCESS | compare_currency_rate:96 | API request to bank completed successfully
-2023-03-30 15:57:34.358 | INFO | try_get_data_from_bank:17 | API request to bank
-2023-03-30 15:57:34.582 | SUCCESS | try_get_data_from_bank:20 | API request to bank completed successfully
-2023-03-30 15:57:34.596 | SUCCESS | get:52 | Saved in the DB
-2023-03-30 15:57:34.597 | INFO | compare_currency_rate:93 | API request to bank
-2023-03-30 15:57:34.796 | SUCCESS | compare_currency_rate:96 | API request to bank completed successfully
-2023-03-30 15:57:41.588 | INFO | try_get_data_from_bank:17 | API request to bank
-2023-03-30 15:57:41.861 | ERROR | try_get_data_from_bank:23 | Could not get the data, error: 404 Client Error: Not Found for url: https://www.nbrb.by/api/exrates/rates/1?ondate=2023-02-13
-2023-03-30 15:57:41.875 | SUCCESS | get:52 | Saved in the DB
-2023-03-30 15:57:41.877 | INFO | compare_currency_rate:93 | API request to bank
-2023-03-30 15:57:42.200 | ERROR | compare_currency_rate:105 | Could not get the data, error: 404 Client Error: Not Found for url: https://www.nbrb.by/api/exrates/rates/None?ondate=2023-02-12
-2023-03-30 16:06:22.222 | INFO | get:43 | This instance is in the database. Display from the database
-2023-03-30 16:06:22.224 | INFO | compare_currency_rate:93 | API request to bank
-2023-03-30 16:06:22.422 | SUCCESS | compare_currency_rate:96 | API request to bank completed successfully
+2023-03-31 12:25:58.925 | INFO | try_get_data_from_bank:17 | API request to bank
+2023-03-31 12:25:59.108 | ERROR | try_get_data_from_bank:23 | Could not get the data, error: 500 Server Error: Internal Server Error for url: https://www.nbrb.by/api/exrates/rates/?ondate=3023-03-8&periodicity=0
+2023-03-31 12:26:10.527 | INFO | try_get_data_from_bank:17 | API request to bank
+2023-03-31 12:26:10.686 | SUCCESS | try_get_data_from_bank:20 | API request to bank completed successfully
+2023-03-31 12:26:10.705 | SUCCESS | get:31 | Saved in the DB
+2023-03-31 12:26:37.152 | INFO | try_get_data_from_bank:17 | API request to bank
+2023-03-31 12:26:37.377 | SUCCESS | try_get_data_from_bank:20 | API request to bank completed successfully
+2023-03-31 12:26:37.393 | SUCCESS | get:31 | Saved in the DB
+2023-03-31 12:28:11.074 | INFO | try_get_data_from_bank:17 | API request to bank
+2023-03-31 12:28:11.304 | ERROR | try_get_data_from_bank:23 | Could not get the data, error: 500 Server Error: Internal Server Error for url: https://www.nbrb.by/api/exrates/rates/?ondate=2994-01-01&periodicity=0
+2023-03-31 12:57:00.301 | INFO | try_get_data_from_bank:17 | API request to bank
+2023-03-31 12:57:00.535 | SUCCESS | try_get_data_from_bank:20 | API request to bank completed successfully
+2023-03-31 12:57:00.545 | SUCCESS | get:37 | Saved in the DB
+2023-03-31 12:59:13.542 | INFO | try_get_data_from_bank:17 | API request to bank
+2023-03-31 12:59:13.721 | SUCCESS | try_get_data_from_bank:20 | API request to bank completed successfully
+2023-03-31 12:59:13.740 | SUCCESS | get:37 | Saved in the DB
+2023-03-31 12:59:18.623 | INFO | try_get_data_from_bank:17 | API request to bank
+2023-03-31 12:59:18.815 | SUCCESS | try_get_data_from_bank:20 | API request to bank completed successfully
+2023-03-31 12:59:18.834 | SUCCESS | get:37 | Saved in the DB
+2023-03-31 13:00:51.093 | INFO | try_get_data_from_bank:17 | API request to bank
+2023-03-31 13:00:51.279 | SUCCESS | try_get_data_from_bank:20 | API request to bank completed successfully
+2023-03-31 13:00:51.296 | SUCCESS | get:71 | Saved in the DB
+2023-03-31 13:00:51.300 | INFO | compare_currency_rate:93 | API request to bank for yesterday 
+2023-03-31 13:00:51.500 | SUCCESS | compare_currency_rate:96 | API request to bank for yesterday completed successfully
+2023-03-31 13:01:56.954 | INFO | try_get_data_from_bank:17 | API request to bank
+2023-03-31 13:01:57.176 | SUCCESS | try_get_data_from_bank:20 | API request to bank completed successfully
+2023-03-31 13:01:57.192 | SUCCESS | get:71 | Saved in the DB
+2023-03-31 13:01:57.195 | INFO | compare_currency_rate:93 | API request to bank for yesterday 
+2023-03-31 13:01:57.478 | SUCCESS | compare_currency_rate:96 | API request to bank for yesterday completed successfully
+2023-03-31 13:03:03.445 | INFO | try_get_data_from_bank:17 | API request to bank
+2023-03-31 13:03:03.766 | ERROR | try_get_data_from_bank:23 | Could not get the data, error: 404 Client Error: Not Found for url: https://www.nbrb.by/api/exrates/rates/2?ondate=2022-12-03
+2023-03-31 13:04:15.177 | INFO | try_get_data_from_bank:17 | API request to bank
+2023-03-31 13:04:15.498 | ERROR | try_get_data_from_bank:23 | Could not get the data, error: 404 Client Error: Not Found for url: https://www.nbrb.by/api/exrates/rates/2?ondate=2022-12-03
+2023-03-31 13:05:05.638 | INFO | try_get_data_from_bank:17 | API request to bank
+2023-03-31 13:05:05.933 | ERROR | try_get_data_from_bank:23 | Could not get the data, error: 404 Client Error: Not Found for url: https://www.nbrb.by/api/exrates/rates/2?ondate=2022-12-03
+2023-03-31 13:05:10.147 | INFO | try_get_data_from_bank:17 | API request to bank
+2023-03-31 13:05:10.515 | ERROR | try_get_data_from_bank:23 | Could not get the data, error: 404 Client Error: Not Found for url: https://www.nbrb.by/api/exrates/rates/3?ondate=2022-12-03
+2023-03-31 13:27:14.056 | INFO | get:60 | This instance is in the database. Display from the database
+2023-03-31 13:27:14.057 | INFO | compare_currency_rate:93 | API request to bank for yesterday 
+2023-03-31 13:27:14.277 | SUCCESS | compare_currency_rate:96 | API request to bank for yesterday completed successfully
+2023-03-31 13:27:32.387 | INFO | try_get_data_from_bank:17 | API request to bank
+2023-03-31 13:27:32.588 | SUCCESS | try_get_data_from_bank:20 | API request to bank completed successfully
+2023-03-31 13:27:32.605 | SUCCESS | get:73 | Saved in the DB
+2023-03-31 13:27:32.608 | INFO | compare_currency_rate:93 | API request to bank for yesterday 
+2023-03-31 13:27:32.808 | SUCCESS | compare_currency_rate:96 | API request to bank for yesterday completed successfully
