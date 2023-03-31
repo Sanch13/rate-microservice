@@ -15,7 +15,7 @@ from logs.settings import logger_1
 class RateDayAPIView(ListAPIView):
     serializer_class = DateSerializer
 
-    def get(self, request, *args, **kwargs):
+    def post(self, request):
         serializer = self.serializer_class(data=request.query_params)
         serializer.is_valid(raise_exception=True)
 

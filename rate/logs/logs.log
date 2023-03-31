@@ -43,3 +43,12 @@
 2023-03-31 13:27:32.605 | SUCCESS | get:73 | Saved in the DB
 2023-03-31 13:27:32.608 | INFO | compare_currency_rate:93 | API request to bank for yesterday 
 2023-03-31 13:27:32.808 | SUCCESS | compare_currency_rate:96 | API request to bank for yesterday completed successfully
+2023-03-31 13:47:20.870 | INFO | try_get_data_from_bank:17 | API request to bank
+2023-03-31 13:47:21.073 | SUCCESS | try_get_data_from_bank:20 | API request to bank completed successfully
+2023-03-31 13:47:21.093 | SUCCESS | get:38 | Saved in the DB
+2023-03-31 13:48:08.235 | INFO | try_get_data_from_bank:17 | API request to bank
+2023-03-31 13:48:08.463 | SUCCESS | try_get_data_from_bank:20 | API request to bank completed successfully
+2023-03-31 13:48:08.486 | SUCCESS | post:38 | Saved in the DB
+2023-03-31 13:48:46.153 | INFO | try_get_data_from_bank:17 | API request to bank
+2023-03-31 13:48:46.447 | SUCCESS | try_get_data_from_bank:20 | API request to bank completed successfully
+2023-03-31 13:48:46.467 | SUCCESS | post:38 | Saved in the DB
