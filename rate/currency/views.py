@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from rest_framework.generics import ListAPIView
+from rest_framework.generics import ListCreateAPIView
 from rest_framework.response import Response
 
 import requests
@@ -12,10 +12,10 @@ from currency.models import RatesDay, RateDay
 from logs.settings import logger_1
 
 
-class RateDayAPIView(ListAPIView):
+class RateDayAPIView(ListCreateAPIView):
     serializer_class = DateSerializer
 
-    def post(self, request):
+    def post(self, request, *args, **kwargs):
         serializer = self.serializer_class(data=request.query_params)
         serializer.is_valid(raise_exception=True)
 
@@ -46,7 +46,7 @@ class RateDayAPIView(ListAPIView):
                             status=422)
 
 
-class RateCurrencyDayAPIView(ListAPIView):
+class RateCurrencyDayAPIView(ListCreateAPIView):
     serializer_class = DateSerializer
 
     def get(self, request, *args, **kwargs):
