@@ -13,6 +13,7 @@ URL_API_BANK = "https://www.nbrb.by/api/exrates/rates/"
 
 
 def try_get_data_from_bank(url: str, params: dict):
+    """Return data from requests or error"""
     try:
         logger_1.info("API request to bank")
         response = requests.get(url=url, params=params)
@@ -84,7 +85,7 @@ def get_body_on_date_uid(date: str, uid: str) -> dict:
 
 
 def compare_currency_rate(cur_date: date, cur_id: int, cur_rate: float) -> str | dict:
-    """Return str. Comparing courses yesterday and today """
+    """Return str or dict. Comparing courses yesterday and today """
     url = URL_API_BANK + str(cur_id)
     params = {
         "ondate": get_yesterday_date(cur_date),
@@ -100,7 +101,6 @@ def compare_currency_rate(cur_date: date, cur_id: int, cur_rate: float) -> str |
         elif yesterday_rate < cur_rate:
             return f"Курс увеличился был {yesterday_rate}, а стал {cur_rate}"
         return f"Курс остался прежним"
-
     except requests.exceptions.HTTPError as error:
         logger_1.error(f"Could not get the data, error: {error}")
         return {"message": f"API request to bank with status {error}"}
