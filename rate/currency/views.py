@@ -1,10 +1,10 @@
 from django.shortcuts import render
-from rest_framework.generics import ListCreateAPIView
+from rest_framework.generics import ListAPIView
 from rest_framework.response import Response
 
 import requests
 
-from currency.serializer import DateSerializer
+from currency.serializer import DateSerializer, DateUidSerializer
 from currency.utils import get_exchange_rates_on_date, get_body_on_date, \
     check_record_exists_by_date, get_crc32_from_body, check_record_exists_by_date_cur_id, \
     get_currency_rate_on_date, get_body_on_date_uid
@@ -12,14 +12,13 @@ from currency.models import RatesDay, RateDay
 from logs.settings import logger_1
 
 
-class RateDayAPIView(ListCreateAPIView):
+class RateDayAPIView(ListAPIView):
     serializer_class = DateSerializer
 
-    def post(self, request, *args, **kwargs):
+    def get(self, request, *args, **kwargs):
         serializer = self.serializer_class(data=request.query_params)
         serializer.is_valid(raise_exception=True)
-
-        date = request.query_params.get("date")
+        date = serializer.validated_data["date"]
 
         if check_record_exists_by_date(date=date):
             logger_1.info(f"This instance is in the database. Display from the database")
@@ -46,15 +45,14 @@ class RateDayAPIView(ListCreateAPIView):
                             status=422)
 
 
-class RateCurrencyDayAPIView(ListCreateAPIView):
-    serializer_class = DateSerializer
+class CurrencyDayAPIView(ListAPIView):
+    serializer_class = DateUidSerializer
 
     def get(self, request, *args, **kwargs):
         serializer = self.serializer_class(data=request.query_params)
         serializer.is_valid(raise_exception=True)
-
-        date = request.query_params.get("date")
-        uid = request.query_params.get("uid")
+        date = serializer.validated_data["date"]
+        uid = serializer.validated_data["uid"]
 
         if check_record_exists_by_date_cur_id(date=date, uid=uid):
             logger_1.info(f"This instance is in the database. Display from the database")

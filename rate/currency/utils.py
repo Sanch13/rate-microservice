@@ -34,9 +34,9 @@ def get_exchange_rates_on_date(date: str) -> dict:
     return try_get_data_from_bank(url=url, params=params)
 
 
-def get_currency_rate_on_date(date: str, uid: str) -> dict:
+def get_currency_rate_on_date(date: str, uid: int) -> dict:
     """Return currency rate on date"""
-    url = URL_API_BANK + uid
+    url = URL_API_BANK + str(uid)
     params = {
         "ondate": date,
     }
@@ -70,7 +70,7 @@ def check_record_exists_by_date_cur_id(date: str, uid: str) -> bool:
     return RateDay.objects.filter(date=date, cur_id=uid).exists()
 
 
-def get_body_on_date_uid(date: str, uid: str):
+def get_body_on_date_uid(date: str, uid: str) -> dict:
     """Return response_body on date and uid"""
     cur_data = RateDay.objects.get(date=date, cur_id=uid)
     response_body = {
@@ -83,7 +83,7 @@ def get_body_on_date_uid(date: str, uid: str):
     return response_body
 
 
-def compare_currency_rate(cur_date: date, cur_id: int, cur_rate: float):
+def compare_currency_rate(cur_date: date, cur_id: int, cur_rate: float) -> str | dict:
     """Return str. Comparing courses yesterday and today """
     url = URL_API_BANK + str(cur_id)
     params = {

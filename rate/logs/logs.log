@@ -52,3 +52,119 @@
 2023-03-31 13:48:46.153 | INFO | try_get_data_from_bank:17 | API request to bank
 2023-03-31 13:48:46.447 | SUCCESS | try_get_data_from_bank:20 | API request to bank completed successfully
 2023-03-31 13:48:46.467 | SUCCESS | post:38 | Saved in the DB
+2023-04-03 12:19:18.994 | INFO | post:24 | This instance is in the database. Display from the database
+2023-04-03 12:19:48.035 | INFO | post:24 | This instance is in the database. Display from the database
+2023-04-03 12:21:21.253 | INFO | post:24 | This instance is in the database. Display from the database
+2023-04-03 12:21:54.781 | INFO | try_get_data_from_bank:17 | API request to bank
+2023-04-03 12:21:55.051 | SUCCESS | try_get_data_from_bank:20 | API request to bank completed successfully
+2023-04-03 12:21:55.071 | SUCCESS | post:38 | Saved in the DB
+2023-04-03 12:25:51.344 | INFO | try_get_data_from_bank:17 | API request to bank
+2023-04-03 12:25:51.578 | SUCCESS | try_get_data_from_bank:20 | API request to bank completed successfully
+2023-04-03 12:25:51.597 | SUCCESS | post:38 | Saved in the DB
+2023-04-03 12:26:15.488 | INFO | get:59 | This instance is in the database. Display from the database
+2023-04-03 12:26:15.489 | INFO | compare_currency_rate:93 | API request to bank for yesterday 
+2023-04-03 12:26:15.693 | SUCCESS | compare_currency_rate:96 | API request to bank for yesterday completed successfully
+2023-04-03 12:27:46.026 | INFO | try_get_data_from_bank:17 | API request to bank
+2023-04-03 12:27:46.223 | SUCCESS | try_get_data_from_bank:20 | API request to bank completed successfully
+2023-04-03 12:27:46.236 | SUCCESS | get:72 | Saved in the DB
+2023-04-03 12:27:46.237 | INFO | compare_currency_rate:93 | API request to bank for yesterday 
+2023-04-03 12:27:46.470 | SUCCESS | compare_currency_rate:96 | API request to bank for yesterday completed successfully
+2023-04-03 12:27:58.993 | INFO | try_get_data_from_bank:17 | API request to bank
+2023-04-03 12:27:59.351 | ERROR | try_get_data_from_bank:23 | Could not get the data, error: 404 Client Error: Not Found for url: https://www.nbrb.by/api/exrates/rates/4510?ondate=2023-01-02
+2023-04-03 12:39:40.720 | INFO | post:25 | This instance is in the database. Display from the database
+2023-04-03 12:40:48.174 | INFO | post:25 | This instance is in the database. Display from the database
+2023-04-03 12:41:39.754 | INFO | try_get_data_from_bank:17 | API request to bank
+2023-04-03 12:41:39.960 | SUCCESS | try_get_data_from_bank:20 | API request to bank completed successfully
+2023-04-03 12:41:39.979 | SUCCESS | post:38 | Saved in the DB
+2023-04-03 12:43:02.543 | INFO | get:58 | This instance is in the database. Display from the database
+2023-04-03 12:43:02.545 | INFO | compare_currency_rate:93 | API request to bank for yesterday 
+2023-04-03 12:43:02.836 | SUCCESS | compare_currency_rate:96 | API request to bank for yesterday completed successfully
+2023-04-03 12:43:16.937 | INFO | try_get_data_from_bank:17 | API request to bank
+2023-04-03 12:43:17.199 | SUCCESS | try_get_data_from_bank:20 | API request to bank completed successfully
+2023-04-03 12:43:17.202 | ERROR | get:78 | Could not save in the DataBase: RateDay matching query does not exist.
+2023-04-03 12:43:41.240 | INFO | try_get_data_from_bank:17 | API request to bank
+2023-04-03 12:43:41.474 | SUCCESS | try_get_data_from_bank:20 | API request to bank completed successfully
+2023-04-03 12:43:41.477 | ERROR | get:78 | Could not save in the DataBase: RateDay matching query does not exist.
+2023-04-03 12:43:43.571 | INFO | try_get_data_from_bank:17 | API request to bank
+2023-04-03 12:43:43.735 | SUCCESS | try_get_data_from_bank:20 | API request to bank completed successfully
+2023-04-03 12:43:43.749 | SUCCESS | get:71 | Saved in the DB
+2023-04-03 12:43:43.752 | INFO | compare_currency_rate:93 | API request to bank for yesterday 
+2023-04-03 12:43:43.984 | SUCCESS | compare_currency_rate:96 | API request to bank for yesterday completed successfully
+2023-04-03 12:48:32.536 | INFO | get:24 | This instance is in the database. Display from the database
+2023-04-03 12:48:35.923 | INFO | get:24 | This instance is in the database. Display from the database
+2023-04-03 12:48:40.278 | INFO | get:24 | This instance is in the database. Display from the database
+2023-04-03 12:48:46.396 | INFO | get:58 | This instance is in the database. Display from the database
+2023-04-03 12:48:46.396 | INFO | compare_currency_rate:93 | API request to bank for yesterday 
+2023-04-03 12:48:46.695 | SUCCESS | compare_currency_rate:96 | API request to bank for yesterday completed successfully
+2023-04-03 12:48:52.884 | INFO | try_get_data_from_bank:17 | API request to bank
+2023-04-03 12:48:53.223 | ERROR | try_get_data_from_bank:23 | Could not get the data, error: 404 Client Error: Not Found for url: https://www.nbrb.by/api/exrates/rates/451?ondate=2018-02-13
+2023-04-03 12:49:16.764 | INFO | try_get_data_from_bank:17 | API request to bank
+2023-04-03 12:49:17.063 | ERROR | try_get_data_from_bank:23 | Could not get the data, error: 404 Client Error: Not Found for url: https://www.nbrb.by/api/exrates/rates/451?ondate=2020-02-13
+2023-04-03 12:49:31.073 | INFO | try_get_data_from_bank:17 | API request to bank
+2023-04-03 12:49:31.403 | ERROR | try_get_data_from_bank:23 | Could not get the data, error: 404 Client Error: Not Found for url: https://www.nbrb.by/api/exrates/rates/451?ondate=2021-02-13
+2023-04-03 12:49:49.077 | INFO | try_get_data_from_bank:17 | API request to bank
+2023-04-03 12:49:49.412 | ERROR | try_get_data_from_bank:23 | Could not get the data, error: 404 Client Error: Not Found for url: https://www.nbrb.by/api/exrates/rates/451?ondate=2021-02-13
+2023-04-03 12:50:11.557 | INFO | get:58 | This instance is in the database. Display from the database
+2023-04-03 12:50:11.558 | INFO | compare_currency_rate:93 | API request to bank for yesterday 
+2023-04-03 12:50:11.768 | SUCCESS | compare_currency_rate:96 | API request to bank for yesterday completed successfully
+2023-04-03 12:50:18.892 | INFO | try_get_data_from_bank:17 | API request to bank
+2023-04-03 12:50:19.080 | SUCCESS | try_get_data_from_bank:20 | API request to bank completed successfully
+2023-04-03 12:50:19.101 | SUCCESS | get:71 | Saved in the DB
+2023-04-03 12:50:19.103 | INFO | compare_currency_rate:93 | API request to bank for yesterday 
+2023-04-03 12:50:19.321 | SUCCESS | compare_currency_rate:96 | API request to bank for yesterday completed successfully
+2023-04-03 12:50:37.771 | INFO | try_get_data_from_bank:17 | API request to bank
+2023-04-03 12:50:38.133 | ERROR | try_get_data_from_bank:23 | Could not get the data, error: 404 Client Error: Not Found for url: https://www.nbrb.by/api/exrates/rates/431?ondate=2018-02-13
+2023-04-03 12:51:04.647 | INFO | get:58 | This instance is in the database. Display from the database
+2023-04-03 12:51:04.648 | INFO | compare_currency_rate:93 | API request to bank for yesterday 
+2023-04-03 12:51:04.963 | SUCCESS | compare_currency_rate:96 | API request to bank for yesterday completed successfully
+2023-04-03 12:51:16.583 | INFO | try_get_data_from_bank:17 | API request to bank
+2023-04-03 12:51:16.778 | SUCCESS | try_get_data_from_bank:20 | API request to bank completed successfully
+2023-04-03 12:51:16.794 | SUCCESS | get:71 | Saved in the DB
+2023-04-03 12:51:16.797 | INFO | compare_currency_rate:93 | API request to bank for yesterday 
+2023-04-03 12:51:17.022 | SUCCESS | compare_currency_rate:96 | API request to bank for yesterday completed successfully
+2023-04-03 12:55:24.094 | INFO | get:24 | This instance is in the database. Display from the database
+2023-04-03 12:56:30.440 | INFO | try_get_data_from_bank:17 | API request to bank
+2023-04-03 12:56:40.701 | SUCCESS | try_get_data_from_bank:20 | API request to bank completed successfully
+2023-04-03 12:56:40.720 | SUCCESS | get:37 | Saved in the DB
+2023-04-03 15:16:23.968 | INFO | get:25 | This instance is in the database. Display from the database
+2023-04-03 15:16:36.506 | INFO | try_get_data_from_bank:17 | API request to bank
+2023-04-03 15:16:36.734 | SUCCESS | try_get_data_from_bank:20 | API request to bank completed successfully
+2023-04-03 15:16:36.748 | SUCCESS | get:38 | Saved in the DB
+2023-04-03 15:16:42.380 | INFO | try_get_data_from_bank:17 | API request to bank
+2023-04-03 15:16:42.553 | SUCCESS | try_get_data_from_bank:20 | API request to bank completed successfully
+2023-04-03 15:16:42.573 | SUCCESS | get:38 | Saved in the DB
+2023-04-03 15:16:49.353 | INFO | get:59 | This instance is in the database. Display from the database
+2023-04-03 15:16:49.354 | INFO | compare_currency_rate:93 | API request to bank for yesterday 
+2023-04-03 15:16:49.540 | SUCCESS | compare_currency_rate:96 | API request to bank for yesterday completed successfully
+2023-04-03 15:17:19.737 | INFO | try_get_data_from_bank:17 | API request to bank
+2023-04-03 15:17:20.100 | ERROR | try_get_data_from_bank:23 | Could not get the data, error: 404 Client Error: Not Found for url: https://www.nbrb.by/api/exrates/rates/451?ondate=2003-02-13
+2023-04-03 15:17:38.194 | INFO | get:59 | This instance is in the database. Display from the database
+2023-04-03 15:17:38.195 | INFO | compare_currency_rate:93 | API request to bank for yesterday 
+2023-04-03 15:17:38.378 | SUCCESS | compare_currency_rate:96 | API request to bank for yesterday completed successfully
+2023-04-03 15:20:45.886 | INFO | get:59 | This instance is in the database. Display from the database
+2023-04-03 15:20:45.888 | INFO | compare_currency_rate:93 | API request to bank for yesterday 
+2023-04-03 15:20:46.109 | SUCCESS | compare_currency_rate:96 | API request to bank for yesterday completed successfully
+2023-04-03 15:21:11.693 | INFO | get:59 | This instance is in the database. Display from the database
+2023-04-03 15:21:11.694 | INFO | compare_currency_rate:93 | API request to bank for yesterday 
+2023-04-03 15:21:11.886 | SUCCESS | compare_currency_rate:96 | API request to bank for yesterday completed successfully
+2023-04-03 15:21:26.294 | INFO | get:59 | This instance is in the database. Display from the database
+2023-04-03 15:21:26.295 | INFO | compare_currency_rate:93 | API request to bank for yesterday 
+2023-04-03 15:21:26.488 | SUCCESS | compare_currency_rate:96 | API request to bank for yesterday completed successfully
+2023-04-03 15:21:34.366 | INFO | try_get_data_from_bank:17 | API request to bank
+2023-04-03 15:21:34.551 | SUCCESS | try_get_data_from_bank:20 | API request to bank completed successfully
+2023-04-03 15:21:34.567 | SUCCESS | get:72 | Saved in the DB
+2023-04-03 15:21:34.570 | INFO | compare_currency_rate:93 | API request to bank for yesterday 
+2023-04-03 15:21:34.765 | SUCCESS | compare_currency_rate:96 | API request to bank for yesterday completed successfully
+2023-04-03 16:01:20.345 | INFO | get:25 | This instance is in the database. Display from the database
+2023-04-03 16:02:26.889 | INFO | try_get_data_from_bank:17 | API request to bank
+2023-04-03 16:02:27.122 | SUCCESS | try_get_data_from_bank:20 | API request to bank completed successfully
+2023-04-03 16:02:27.142 | SUCCESS | get:38 | Saved in the DB
+2023-04-03 16:03:48.448 | INFO | get:59 | This instance is in the database. Display from the database
+2023-04-03 16:03:48.449 | INFO | compare_currency_rate:93 | API request to bank for yesterday 
+2023-04-03 16:03:48.628 | SUCCESS | compare_currency_rate:96 | API request to bank for yesterday completed successfully
+2023-04-03 16:03:56.702 | INFO | get:25 | This instance is in the database. Display from the database
+2023-04-03 16:08:39.014 | INFO | get:24 | This instance is in the database. Display from the database
+2023-04-03 16:08:49.772 | INFO | get:24 | This instance is in the database. Display from the database
+2023-04-03 16:17:28.581 | INFO | get:58 | This instance is in the database. Display from the database
+2023-04-03 16:17:28.583 | INFO | compare_currency_rate:93 | API request to bank for yesterday 
+2023-04-03 16:17:28.829 | SUCCESS | compare_currency_rate:96 | API request to bank for yesterday completed successfully
