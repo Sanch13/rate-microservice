@@ -1,54 +1,66 @@
-2023-03-31 12:25:58.925 | INFO | try_get_data_from_bank:17 | API request to bank
-2023-03-31 12:25:59.108 | ERROR | try_get_data_from_bank:23 | Could not get the data, error: 500 Server Error: Internal Server Error for url: https://www.nbrb.by/api/exrates/rates/?ondate=3023-03-8&periodicity=0
-2023-03-31 12:26:10.527 | INFO | try_get_data_from_bank:17 | API request to bank
-2023-03-31 12:26:10.686 | SUCCESS | try_get_data_from_bank:20 | API request to bank completed successfully
-2023-03-31 12:26:10.705 | SUCCESS | get:31 | Saved in the DB
-2023-03-31 12:26:37.152 | INFO | try_get_data_from_bank:17 | API request to bank
-2023-03-31 12:26:37.377 | SUCCESS | try_get_data_from_bank:20 | API request to bank completed successfully
-2023-03-31 12:26:37.393 | SUCCESS | get:31 | Saved in the DB
-2023-03-31 12:28:11.074 | INFO | try_get_data_from_bank:17 | API request to bank
-2023-03-31 12:28:11.304 | ERROR | try_get_data_from_bank:23 | Could not get the data, error: 500 Server Error: Internal Server Error for url: https://www.nbrb.by/api/exrates/rates/?ondate=2994-01-01&periodicity=0
-2023-03-31 12:57:00.301 | INFO | try_get_data_from_bank:17 | API request to bank
-2023-03-31 12:57:00.535 | SUCCESS | try_get_data_from_bank:20 | API request to bank completed successfully
-2023-03-31 12:57:00.545 | SUCCESS | get:37 | Saved in the DB
-2023-03-31 12:59:13.542 | INFO | try_get_data_from_bank:17 | API request to bank
-2023-03-31 12:59:13.721 | SUCCESS | try_get_data_from_bank:20 | API request to bank completed successfully
-2023-03-31 12:59:13.740 | SUCCESS | get:37 | Saved in the DB
-2023-03-31 12:59:18.623 | INFO | try_get_data_from_bank:17 | API request to bank
-2023-03-31 12:59:18.815 | SUCCESS | try_get_data_from_bank:20 | API request to bank completed successfully
-2023-03-31 12:59:18.834 | SUCCESS | get:37 | Saved in the DB
-2023-03-31 13:00:51.093 | INFO | try_get_data_from_bank:17 | API request to bank
-2023-03-31 13:00:51.279 | SUCCESS | try_get_data_from_bank:20 | API request to bank completed successfully
-2023-03-31 13:00:51.296 | SUCCESS | get:71 | Saved in the DB
-2023-03-31 13:00:51.300 | INFO | compare_currency_rate:93 | API request to bank for yesterday 
-2023-03-31 13:00:51.500 | SUCCESS | compare_currency_rate:96 | API request to bank for yesterday completed successfully
-2023-03-31 13:01:56.954 | INFO | try_get_data_from_bank:17 | API request to bank
-2023-03-31 13:01:57.176 | SUCCESS | try_get_data_from_bank:20 | API request to bank completed successfully
-2023-03-31 13:01:57.192 | SUCCESS | get:71 | Saved in the DB
-2023-03-31 13:01:57.195 | INFO | compare_currency_rate:93 | API request to bank for yesterday 
-2023-03-31 13:01:57.478 | SUCCESS | compare_currency_rate:96 | API request to bank for yesterday completed successfully
-2023-03-31 13:03:03.445 | INFO | try_get_data_from_bank:17 | API request to bank
-2023-03-31 13:03:03.766 | ERROR | try_get_data_from_bank:23 | Could not get the data, error: 404 Client Error: Not Found for url: https://www.nbrb.by/api/exrates/rates/2?ondate=2022-12-03
-2023-03-31 13:04:15.177 | INFO | try_get_data_from_bank:17 | API request to bank
-2023-03-31 13:04:15.498 | ERROR | try_get_data_from_bank:23 | Could not get the data, error: 404 Client Error: Not Found for url: https://www.nbrb.by/api/exrates/rates/2?ondate=2022-12-03
-2023-03-31 13:05:05.638 | INFO | try_get_data_from_bank:17 | API request to bank
-2023-03-31 13:05:05.933 | ERROR | try_get_data_from_bank:23 | Could not get the data, error: 404 Client Error: Not Found for url: https://www.nbrb.by/api/exrates/rates/2?ondate=2022-12-03
-2023-03-31 13:05:10.147 | INFO | try_get_data_from_bank:17 | API request to bank
-2023-03-31 13:05:10.515 | ERROR | try_get_data_from_bank:23 | Could not get the data, error: 404 Client Error: Not Found for url: https://www.nbrb.by/api/exrates/rates/3?ondate=2022-12-03
-2023-03-31 13:27:14.056 | INFO | get:60 | This instance is in the database. Display from the database
-2023-03-31 13:27:14.057 | INFO | compare_currency_rate:93 | API request to bank for yesterday 
-2023-03-31 13:27:14.277 | SUCCESS | compare_currency_rate:96 | API request to bank for yesterday completed successfully
-2023-03-31 13:27:32.387 | INFO | try_get_data_from_bank:17 | API request to bank
-2023-03-31 13:27:32.588 | SUCCESS | try_get_data_from_bank:20 | API request to bank completed successfully
-2023-03-31 13:27:32.605 | SUCCESS | get:73 | Saved in the DB
-2023-03-31 13:27:32.608 | INFO | compare_currency_rate:93 | API request to bank for yesterday 
-2023-03-31 13:27:32.808 | SUCCESS | compare_currency_rate:96 | API request to bank for yesterday completed successfully
-2023-03-31 13:47:20.870 | INFO | try_get_data_from_bank:17 | API request to bank
-2023-03-31 13:47:21.073 | SUCCESS | try_get_data_from_bank:20 | API request to bank completed successfully
-2023-03-31 13:47:21.093 | SUCCESS | get:38 | Saved in the DB
-2023-03-31 13:48:08.235 | INFO | try_get_data_from_bank:17 | API request to bank
-2023-03-31 13:48:08.463 | SUCCESS | try_get_data_from_bank:20 | API request to bank completed successfully
-2023-03-31 13:48:08.486 | SUCCESS | post:38 | Saved in the DB
-2023-03-31 13:48:46.153 | INFO | try_get_data_from_bank:17 | API request to bank
-2023-03-31 13:48:46.447 | SUCCESS | try_get_data_from_bank:20 | API request to bank completed successfully
-2023-03-31 13:48:46.467 | SUCCESS | post:38 | Saved in the DB
+2023-04-03 06:23:06.818 | INFO | try_get_data_from_bank:17 | API request to bank
+2023-04-03 06:23:07.033 | SUCCESS | try_get_data_from_bank:20 | API request to bank completed successfully
+2023-04-03 06:23:07.046 | SUCCESS | post:64 | Saved in the DB
+2023-04-03 06:24:30.308 | INFO | try_get_data_from_bank:17 | API request to bank
+2023-04-03 06:24:30.534 | SUCCESS | try_get_data_from_bank:20 | API request to bank completed successfully
+2023-04-03 06:24:30.550 | SUCCESS | post:64 | Saved in the DB
+2023-04-03 06:25:07.854 | INFO | post:51 | This instance is in the database. Display from the database
+2023-04-03 06:25:44.476 | INFO | post:51 | This instance is in the database. Display from the database
+2023-04-03 07:53:29.810 | INFO | try_get_data_from_bank:17 | API request to bank
+2023-04-03 07:53:30.007 | SUCCESS | try_get_data_from_bank:20 | API request to bank completed successfully
+2023-04-03 07:53:30.023 | SUCCESS | post:66 | Saved in the DB
+2023-04-03 08:23:15.132 | INFO | try_get_data_from_bank:17 | API request to bank
+2023-04-03 08:23:15.344 | SUCCESS | try_get_data_from_bank:20 | API request to bank completed successfully
+2023-04-03 08:23:15.357 | SUCCESS | post:66 | Saved in the DB
+2023-04-03 08:23:38.728 | INFO | post:53 | This instance is in the database. Display from the database
+2023-04-03 08:27:11.728 | INFO | try_get_data_from_bank:17 | API request to bank
+2023-04-03 08:27:11.945 | SUCCESS | try_get_data_from_bank:20 | API request to bank completed successfully
+2023-04-03 08:27:11.962 | SUCCESS | post:66 | Saved in the DB
+2023-04-03 08:27:38.541 | INFO | try_get_data_from_bank:17 | API request to bank
+2023-04-03 08:27:38.727 | SUCCESS | try_get_data_from_bank:20 | API request to bank completed successfully
+2023-04-03 08:27:38.745 | SUCCESS | post:66 | Saved in the DB
+2023-04-03 08:28:16.544 | INFO | try_get_data_from_bank:17 | API request to bank
+2023-04-03 08:28:16.742 | SUCCESS | try_get_data_from_bank:20 | API request to bank completed successfully
+2023-04-03 08:28:16.761 | SUCCESS | post:66 | Saved in the DB
+2023-04-03 08:33:40.742 | INFO | try_get_data_from_bank:17 | API request to bank
+2023-04-03 08:33:40.981 | SUCCESS | try_get_data_from_bank:20 | API request to bank completed successfully
+2023-04-03 08:33:41.001 | SUCCESS | post:66 | Saved in the DB
+2023-04-03 08:34:43.608 | INFO | try_get_data_from_bank:17 | API request to bank
+2023-04-03 08:34:43.855 | SUCCESS | try_get_data_from_bank:20 | API request to bank completed successfully
+2023-04-03 08:34:43.873 | SUCCESS | post:66 | Saved in the DB
+2023-04-03 08:37:43.511 | INFO | try_get_data_from_bank:17 | API request to bank
+2023-04-03 08:37:43.746 | SUCCESS | try_get_data_from_bank:20 | API request to bank completed successfully
+2023-04-03 08:37:43.765 | SUCCESS | post:65 | Saved in the DB
+2023-04-03 08:38:12.688 | INFO | post:52 | This instance is in the database. Display from the database
+2023-04-03 08:48:43.348 | INFO | try_get_data_from_bank:17 | API request to bank
+2023-04-03 08:48:43.538 | SUCCESS | try_get_data_from_bank:20 | API request to bank completed successfully
+2023-04-03 08:48:43.557 | SUCCESS | post:65 | Saved in the DB
+2023-04-03 08:49:35.440 | INFO | post:52 | This instance is in the database. Display from the database
+2023-04-03 09:34:43.406 | INFO | try_get_data_from_bank:17 | API request to bank
+2023-04-03 09:34:43.619 | SUCCESS | try_get_data_from_bank:20 | API request to bank completed successfully
+2023-04-03 09:34:43.635 | SUCCESS | post:64 | Saved in the DB
+2023-04-03 09:37:45.747 | INFO | try_get_data_from_bank:17 | API request to bank
+2023-04-03 09:37:45.920 | SUCCESS | try_get_data_from_bank:20 | API request to bank completed successfully
+2023-04-03 09:37:45.938 | SUCCESS | post:64 | Saved in the DB
+2023-04-03 09:57:24.791 | INFO | post:51 | This instance is in the database. Display from the database
+2023-04-03 09:57:45.294 | INFO | post:51 | This instance is in the database. Display from the database
+2023-04-03 10:07:48.993 | INFO | post:51 | This instance is in the database. Display from the database
+2023-04-03 10:08:49.200 | INFO | post:51 | This instance is in the database. Display from the database
+2023-04-03 10:09:06.671 | INFO | post:51 | This instance is in the database. Display from the database
+2023-04-03 10:10:39.043 | INFO | post:51 | This instance is in the database. Display from the database
+2023-04-03 10:13:23.378 | INFO | try_get_data_from_bank:17 | API request to bank
+2023-04-03 10:13:23.578 | SUCCESS | try_get_data_from_bank:20 | API request to bank completed successfully
+2023-04-03 10:13:23.592 | SUCCESS | post:64 | Saved in the DB
+2023-04-03 10:15:00.071 | INFO | try_get_data_from_bank:17 | API request to bank
+2023-04-03 10:15:00.245 | SUCCESS | try_get_data_from_bank:20 | API request to bank completed successfully
+2023-04-03 10:15:00.264 | SUCCESS | post:64 | Saved in the DB
+2023-04-03 10:16:57.866 | INFO | try_get_data_from_bank:17 | API request to bank
+2023-04-03 10:16:58.044 | SUCCESS | try_get_data_from_bank:20 | API request to bank completed successfully
+2023-04-03 10:16:58.063 | SUCCESS | post:64 | Saved in the DB
+2023-04-03 10:17:09.913 | INFO | post:51 | This instance is in the database. Display from the database
+2023-04-03 10:18:16.838 | INFO | try_get_data_from_bank:17 | API request to bank
+2023-04-03 10:18:17.057 | SUCCESS | try_get_data_from_bank:20 | API request to bank completed successfully
+2023-04-03 10:18:17.077 | SUCCESS | post:64 | Saved in the DB
+2023-04-03 10:22:19.622 | INFO | try_get_data_from_bank:17 | API request to bank
+2023-04-03 10:22:19.810 | SUCCESS | try_get_data_from_bank:20 | API request to bank completed successfully
+2023-04-03 10:22:19.829 | SUCCESS | post:64 | Saved in the DB

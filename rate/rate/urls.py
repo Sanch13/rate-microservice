@@ -15,12 +15,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-
-from currency.views import RateDayAPIView, RateCurrencyDayAPIView, index
+from currency.yasg import urlpatterns as doc_urls
+from currency.views import RateDayAPIView, index, RatesDayAPIView
 
 urlpatterns = [
     path('', index, name="index"),
-    path('api/v1/rate', RateDayAPIView.as_view()),
-    path('api/v1/rate/currency', RateCurrencyDayAPIView.as_view()),
+    path('api/v1/rate', RatesDayAPIView.as_view()),
+    path('api/v1/rate/currency', RateDayAPIView.as_view()),
     path('admin/', admin.site.urls),
 ]
+
+urlpatterns += doc_urls
