@@ -1,5 +1,5 @@
 Предпологается, что git и python установлены:
-Клонируем проект с репозитория git clone https://github.com/Sanch13/rate-microservice
+Клонируем проект с репозитория git clone https://github.com/Sanch13/rate-microservice/tree/feature/task
 Если poetry не установлен в системе, то вводим в терминале: pip install poetry
 Переходим в папку с проектом:
 cd rate-microservice
