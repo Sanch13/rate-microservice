@@ -1,18 +1,24 @@
 from django.shortcuts import render
-from rest_framework.generics import ListAPIView
+from rest_framework.generics import ListAPIView, RetrieveAPIView
 from rest_framework.response import Response
 
 import requests
 
 from currency.serializer import DateSerializer, DateUidSerializer
-from currency.utils import get_exchange_rates_on_date, get_body_on_date, \
-    check_record_exists_by_date, get_crc32_from_body, check_record_exists_by_date_cur_id, \
-    get_currency_rate_on_date, get_body_on_date_uid
+from currency.utils import (
+    get_exchange_rates_on_date,
+    get_body_on_date,
+    check_record_exists_by_date,
+    get_crc32_from_body,
+    check_record_exists_by_date_cur_id,
+    get_body_on_date_uid,
+    get_currency_rate_on_date,
+)
 from currency.models import RatesDay, RateDay
 from logs.settings import logger_1
 
 
-class RateDayAPIView(ListAPIView):
+class CurrenciesDayAPIView(ListAPIView):
     serializer_class = DateSerializer
 
     def get(self, request, *args, **kwargs):
@@ -45,7 +51,7 @@ class RateDayAPIView(ListAPIView):
                             status=422)
 
 
-class CurrencyDayAPIView(ListAPIView):
+class CurrencyDayAPIView(RetrieveAPIView):
     serializer_class = DateUidSerializer
 
     def get(self, request, *args, **kwargs):

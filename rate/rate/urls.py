@@ -15,11 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from currency.views import RateDayAPIView, CurrencyDayAPIView, index
+from currency.views import CurrenciesDayAPIView, CurrencyDayAPIView, index
 
 urlpatterns = [
     path('', index, name="index"),
-    path('api/v1/rate', RateDayAPIView.as_view()),
+    path('api/v1/currencies', CurrenciesDayAPIView.as_view()),
     path('api/v1/currency', CurrencyDayAPIView.as_view()),
     path('admin/', admin.site.urls),
 ]
